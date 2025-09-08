@@ -47,7 +47,7 @@ const ApplyJob = () => {
     try {
 
       if (!userData) {
-        return toast.error('Login to apply for jobs')
+        return toast.error('Login to apply for officiating positions')
       }
 
       if (!userData.resume) {
@@ -97,7 +97,7 @@ const ApplyJob = () => {
 
       <div className='min-h-screen flex flex-col py-10 container px-4 2xl:px-20 mx-auto'>
         <div className='bg-white text-black rounded-lg w-ful'>
-          <div className='flex justify-center md:justify-between flex-wrap gap-8 px-14 py-20  mb-6 bg-sky-50 border border-sky-400 rounded-xl'>
+          <div className='flex justify-center md:justify-between flex-wrap gap-8 px-14 py-20  mb-6 bg-green-50 border border-green-400 rounded-xl'>
             <div className='flex flex-col md:flex-row items-center'>
               <img className='h-24 bg-white rounded-lg p-4 mr-4 max-md:mb-4 border' src={JobData.companyId.image} alt="" />
               <div className='text-center md:text-left text-neutral-700'>
@@ -124,7 +124,7 @@ const ApplyJob = () => {
             </div>
 
             <div className='flex flex-col justify-center text-end text-sm max-md:mx-auto max-md:text-center'>
-              <button onClick={applyHandler} className='bg-blue-600 p-2.5 px-10 text-white rounded'>{isAlreadyApplied ? 'Already Applied' : 'Apply Now'}</button>
+              <button onClick={applyHandler} className='bg-green-600 p-2.5 px-10 text-white rounded'>{isAlreadyApplied ? 'Already Applied' : 'Apply Now'}</button>
               <p className='mt-1 text-gray-600'>Posted {moment(JobData.date).fromNow()}</p>
             </div>
 
@@ -132,13 +132,13 @@ const ApplyJob = () => {
 
           <div className='flex flex-col lg:flex-row justify-between items-start'>
             <div className='w-full lg:w-2/3'>
-              <h2 className='font-bold text-2xl mb-4'>Job description</h2>
+              <h2 className='font-bold text-2xl mb-4'>Position description</h2>
               <div className='rich-text' dangerouslySetInnerHTML={{ __html: JobData.description }}></div>
-              <button onClick={applyHandler} className='bg-blue-600 p-2.5 px-10 text-white rounded mt-10'>{isAlreadyApplied ? 'Already Applied' : 'Apply Now'}</button>
+              <button onClick={applyHandler} className='bg-green-600 p-2.5 px-10 text-white rounded mt-10'>{isAlreadyApplied ? 'Already Applied' : 'Apply Now'}</button>
             </div>
             {/* Right Section More Jobs */}
             <div className='w-full lg:w-1/3 mt-8 lg:mt-0 lg:ml-8 space-y-5'>
-              <h2>More jobs from {JobData.companyId.name}</h2>
+              <h2>More opportunities from {JobData.companyId.name}</h2>
               {jobs.filter(job => job._id !== JobData._id && job.companyId._id === JobData.companyId._id)
                 .filter(job => {
                   // Set of applied jobIds

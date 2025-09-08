@@ -8,8 +8,8 @@ import { toast } from 'react-toastify';
 const AddJob = () => {
 
     const [title, setTitle] = useState('');
-    const [location, setLocation] = useState('Bangalore');
-    const [category, setCategory] = useState('Programming');
+    const [location, setLocation] = useState('Mumbai');
+    const [category, setCategory] = useState('Cricket');
     const [level, setLevel] = useState('Beginner level');
     const [salary, setSalary] = useState(0);
 
@@ -60,8 +60,8 @@ const AddJob = () => {
         <form onSubmit={onSubmitHandler} className='container p-4 flex flex-col w-full items-start gap-3'>
 
             <div className='w-full'>
-                <p className='mb-2'>Job Title</p>
-                <input type="text" placeholder='Type here'
+                <p className='mb-2'>Position Title</p>
+                <input type="text" placeholder='e.g., Cricket Match Umpire'
                     onChange={e => setTitle(e.target.value)} value={title}
                     required
                     className='w-full max-w-lg px-3 py-2 border-2 border-gray-300 rounded'
@@ -69,7 +69,7 @@ const AddJob = () => {
             </div>
 
             <div className='w-full max-w-lg'>
-                <p className='my-2'>Job Description</p>
+                <p className='my-2'>Position Description</p>
                 <div ref={editorRef}>
 
                 </div>
@@ -78,7 +78,7 @@ const AddJob = () => {
             <div className='flex flex-col sm:flex-row gap-2 w-full sm:gap-8'>
 
                 <div>
-                    <p className='mb-2'>Job Category</p>
+                    <p className='mb-2'>Sport Category</p>
                     <select className='w-full px-3 py-2 border-2 border-gray-300 rounded' onChange={e => setCategory(e.target.value)}>
                         {JobCategories.map((category, index) => (
                             <option key={index} value={category}>{category}</option>
@@ -87,7 +87,7 @@ const AddJob = () => {
                 </div>
 
                 <div>
-                    <p className='mb-2'>Job Location</p>
+                    <p className='mb-2'>Match Location</p>
                     <select className='w-full px-3 py-2 border-2 border-gray-300 rounded' onChange={e => setLocation(e.target.value)}>
                         {JobLocations.map((location, index) => (
                             <option key={index} value={location}>{location}</option>
@@ -96,7 +96,7 @@ const AddJob = () => {
                 </div>
 
                 <div>
-                    <p className='mb-2'>Job Level</p>
+                    <p className='mb-2'>Experience Level</p>
                     <select className='w-full px-3 py-2 border-2 border-gray-300 rounded' onChange={e => setLevel(e.target.value)}>
                         <option value="Beginner level">Beginner level</option>
                         <option value="Intermediate level">Intermediate level</option>
@@ -106,11 +106,11 @@ const AddJob = () => {
 
             </div>
             <div>
-                <p className='mb-2'>Job Salary</p>
+                <p className='mb-2'>Payment per Match</p>
                 <input min={0} className='w-full px-3 py-2 border-2 border-gray-300 rounded sm:w-[120px]' onChange={e => setSalary(e.target.value)} type="Number" placeholder='2500' />
             </div>
 
-            <button className='w-28 py-3 mt-4 bg-black text-white rounded'>ADD</button>
+            <button className='w-28 py-3 mt-4 bg-green-600 text-white rounded'>ADD</button>
         </form>
     )
 }

@@ -66,7 +66,7 @@ const ManageJobs = () => {
 
   return jobs ? jobs.length === 0 ? (
     <div className='flex items-center justify-center h-[70vh]'>
-      <p className='text-xl sm:text-2xl'>No Jobs Available or posted</p>
+      <p className='text-xl sm:text-2xl'>No Officiating Positions Available or Posted</p>
     </div>
   ) : (
     <div className='container p-4 max-w-5xl'>
@@ -75,7 +75,7 @@ const ManageJobs = () => {
           <thead>
             <tr>
               <th className='py-2 px-4 border-b text-left max-sm:hidden'>#</th>
-              <th className='py-2 px-4 border-b text-left'>Job Title</th>
+              <th className='py-2 px-4 border-b text-left'>Position Title</th>
               <th className='py-2 px-4 border-b text-left max-sm:hidden'>Date</th>
               <th className='py-2 px-4 border-b text-left max-sm:hidden'>Location</th>
               <th className='py-2 px-4 border-b text-center'>Applicants</th>
@@ -99,7 +99,7 @@ const ManageJobs = () => {
         </table>
       </div>
       <div className='mt-4 flex justify-end'>
-        <button onClick={() => navigate('/dashboard/add-job')} className='bg-black text-white py-2 px-4 rounded'>Add new job</button>
+        <button onClick={() => navigate('/dashboard/add-job')} className='bg-green-600 text-white py-2 px-4 rounded'>Add new position</button>
       </div>
     </div>
   ) : <Loading />

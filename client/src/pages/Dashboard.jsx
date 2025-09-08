@@ -9,7 +9,7 @@ const Dashboard = () => {
 
     const { companyData, setCompanyData, setCompanyToken } = useContext(AppContext)
 
-    // Function to logout for company
+    // Function to logout for team
     const logout = () => {
         setCompanyToken(null)
         localStorage.removeItem('companyToken')
@@ -26,10 +26,15 @@ const Dashboard = () => {
     return (
         <div className='min-h-screen'>
 
-            {/* Navbar for Recuriter Panel */}
-            <div className='shadow py-4'>
+            {/* Navbar for Team Manager Panel */}
+            <div className='shadow py-4 bg-gradient-to-r from-green-50 to-blue-50'>
                 <div className='px-5 flex justify-between items-center'>
-                    <img onClick={e => navigate('/')} className='max-sm:w-32 cursor-pointer' src={assets.logo} alt="" />
+                    <div onClick={e => navigate('/')} className='cursor-pointer flex items-center gap-2'>
+                        <span className='text-2xl'>🕴</span>
+                        <h1 className='text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent max-sm:text-lg'>
+                            OffsideJobs
+                        </h1>
+                    </div>
                     {companyData && (
                         <div className='flex items-center gap-3'>
                             <p className='max-sm:hidden'>Welcome, {companyData.name}</p>
@@ -48,20 +53,20 @@ const Dashboard = () => {
 
             <div className='flex items-start'>
 
-                {/* Left Sidebar with option to add job, manage jobs, view applications */}
+                {/* Left Sidebar with option to add position, manage positions, view applications */}
                 <div className='inline-block min-h-screen border-r-2'>
                     <ul className='flex flex-col items-start pt-5 text-gray-800'>
-                        <NavLink className={({ isActive }) => ` flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`} to={'/dashboard/add-job'}>
+                        <NavLink className={({ isActive }) => ` flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-green-100 border-r-4 border-green-500'}`} to={'/dashboard/add-job'}>
                             <img className='min-w-4' src={assets.add_icon} alt="" />
-                            <p className='max-sm:hidden'>Add Job</p>
+                            <p className='max-sm:hidden'>Add Position</p>
                         </NavLink>
 
-                        <NavLink className={({ isActive }) => ` flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`} to={'/dashboard/manage-jobs'}>
+                        <NavLink className={({ isActive }) => ` flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-green-100 border-r-4 border-green-500'}`} to={'/dashboard/manage-jobs'}>
                             <img className='min-w-4' src={assets.home_icon} alt="" />
-                            <p className='max-sm:hidden'>Manage Jobs</p>
+                            <p className='max-sm:hidden'>Manage Positions</p>
                         </NavLink>
 
-                        <NavLink className={({ isActive }) => ` flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-blue-100 border-r-4 border-blue-500'}`} to={'/dashboard/view-applications'}>
+                        <NavLink className={({ isActive }) => ` flex items-center p-3 sm:px-6 gap-2 w-full hover:bg-gray-100 ${isActive && 'bg-green-100 border-r-4 border-green-500'}`} to={'/dashboard/view-applications'}>
                             <img className='min-w-4' src={assets.person_tick_icon} alt="" />
                             <p className='max-sm:hidden'>View Applications</p>
                         </NavLink>

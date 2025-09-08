@@ -73,70 +73,70 @@ export const assets = {
 }
 
 export const JobCategories = [
-    "Programming",
-    "Data Science",
-    "Designing",
-    "Networking",
-    "Management",
-    "Marketing",
-    "Cybersecurity",
+    "Cricket",
+    "Football",
+    "Basketball",
+    "Volleyball",
+    "Tennis",
+    "Baseball",
+    "Hockey",
 ]
 
 export const JobLocations = [
-    "Bangalore",
-    "Washington",
-    "Hyderabad",
+    "New Delhi",
     "Mumbai",
-    "California",
+    "Bangalore",
     "Chennai",
-    "New York"
+    "Kolkata",
+    "Hyderabad",
+    "Pune"
 ]
 
 // Sample data for Manage Jobs Page
 export const manageJobsData = [
-    { _id: 1, title: "Full Stack Developer", date: 1729102298497, location: "Bangalore", applicants: 20 },
-    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "San Francisco", applicants: 15 },
-    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "London", applicants: 2 },
-    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Dubai", applicants: 25 }
+    { _id: 1, title: "Cricket Match Umpire", date: 1729102298497, location: "Mumbai", applicants: 20 },
+    { _id: 2, title: "Football Referee", date: 1729102298497, location: "New Delhi", applicants: 15 },
+    { _id: 3, title: "Basketball Official", date: 1729102298497, location: "Bangalore", applicants: 2 },
+    { _id: 4, title: "Volleyball Referee", date: 1729102298497, location: "Chennai", applicants: 25 }
 ];
 
 // Sample data for Profile Page
 export const jobsApplied = [
     {
-        company: 'Amazon',
-        title: 'Full Stack Developer',
-        location: 'Bangalore',
+        company: 'Mumbai Indians',
+        title: 'Cricket Match Umpire',
+        location: 'Mumbai',
         date: '22 Aug, 2024',
         status: 'Pending',
         logo: company_icon,
     },
     {
-        company: 'Meta',
-        title: 'Data Scientist',
-        location: 'San Francisco',
+        company: 'Delhi FC',
+        title: 'Football Referee',
+        location: 'New Delhi',
         date: '22 Aug, 2024',
         status: 'Rejected',
         logo: company_icon,
     },
     {
-        company: 'Google',
-        title: 'Marketing Manager',
-        location: 'London',
+        company: 'Bangalore Basketball Club',
+        title: 'Basketball Official',
+        location: 'Bangalore',
         date: '25 Sep, 2024',
         status: 'Accepted',
         logo: company_icon,
     },
     {
-        company: 'Qualcomm',
-        title: 'UI/UX Designer',
-        location: 'Dubai',
+        company: 'Chennai Volleyball Association',
+        title: 'Volleyball Referee',
+        location: 'Chennai',
         date: '15 Oct, 2024',
         status: 'Pending',
         logo: company_icon,
     },
     {
-        company: 'Microsoft',
-        title: 'Full Stack Developer',
+        company: 'Hyderabad Tennis Club',
+        title: 'Tennis Line Judge',
         location: 'Hyderabad',
         date: '25 Sep, 2024',
         status: 'Accepted',
@@ -145,246 +145,246 @@ export const jobsApplied = [
 ];
 
 export const viewApplicationsPageData = [
-    { _id: 1, name: "Richard Sanford", jobTitle: "Full Stack Developer", location: "Bangalore", imgSrc: profile_img },
-    { _id: 2, name: "Enrique Murphy", jobTitle: "Data Scientist", location: "San Francisco", imgSrc: profile_img },
-    { _id: 3, name: "Alison Powell", jobTitle: "Marketing Manager", location: "London", imgSrc: profile_img },
-    { _id: 4, name: "Richard Sanford", jobTitle: "UI/UX Designer", location: "Dubai", imgSrc: profile_img },
-    { _id: 5, name: "Enrique Murphy", jobTitle: "Full Stack Developer", location: "Hyderabad", imgSrc: profile_img },
-    { _id: 6, name: "Alison Powell", jobTitle: "Data Scientist", location: "New Delhi", imgSrc: profile_img },
-    { _id: 7, name: "Richard Sanford", jobTitle: "Marketing Manager", location: "Chennai", imgSrc: profile_img },
+    { _id: 1, name: "Richard Sanford", jobTitle: "Cricket Match Umpire", location: "Mumbai", imgSrc: profile_img },
+    { _id: 2, name: "Enrique Murphy", jobTitle: "Football Referee", location: "New Delhi", imgSrc: profile_img },
+    { _id: 3, name: "Alison Powell", jobTitle: "Basketball Official", location: "Bangalore", imgSrc: profile_img },
+    { _id: 4, name: "Richard Sanford", jobTitle: "Volleyball Referee", location: "Chennai", imgSrc: profile_img },
+    { _id: 5, name: "Enrique Murphy", jobTitle: "Tennis Line Judge", location: "Hyderabad", imgSrc: profile_img },
+    { _id: 6, name: "Alison Powell", jobTitle: "Hockey Referee", location: "Kolkata", imgSrc: profile_img },
+    { _id: 7, name: "Richard Sanford", jobTitle: "Baseball Umpire", location: "Pune", imgSrc: profile_img },
 ];
 
 export const jobsData = [
     {
         _id: '1',
-        title: "Full Stack Developer",
-        location: "California",
+        title: "Cricket Match Umpire",
+        location: "Mumbai",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Mumbai Indians",
+            "email": "mumbaiindians@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly.</p>
+        <p>We are seeking a highly skilled Cricket Match Umpire to officiate domestic and international cricket matches. The ideal candidate will have extensive knowledge of cricket laws and regulations, excellent decision-making abilities, and the stamina to officiate long-format matches.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Build, test, and deploy highly responsive web applications.</li>
-            <li>Design user-friendly interfaces using HTML, CSS, and JavaScript.</li>
-            <li>Develop and maintain APIs and databases to support application functionality.</li>
-            <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
-            <li>Identify and resolve bottlenecks and bugs to optimize application performance.</li>
+            <li>Officiate cricket matches ensuring fair play and adherence to ICC laws</li>
+            <li>Make accurate decisions on run-outs, LBW, catches, and boundaries</li>
+            <li>Communicate effectively with players, coaches, and match officials</li>
+            <li>Maintain match records and submit detailed reports post-match</li>
+            <li>Stay updated with the latest cricket laws and regulations</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular).</li>
-            <li>Experience with server-side languages (e.g., Node.js, Python).</li>
-            <li>Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB).</li>
-            <li>Strong understanding of web security and performance optimization.</li>
-            <li>Ability to work in an Agile environment.</li>
+            <li>Certified cricket umpire with minimum 5 years experience</li>
+            <li>Excellent knowledge of ICC cricket laws and playing conditions</li>
+            <li>Strong decision-making skills under pressure</li>
+            <li>Physical fitness to stand for extended periods</li>
+            <li>Excellent communication and conflict resolution skills</li>
         </ol>`,
         salary: 82000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Cricket",
     },
     {
         _id: '2',
-        title: "Data Scientist",
-        location: "New York",
+        title: "Football Referee",
+        location: "New Delhi",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Delhi FC",
+            "email": "delhifc@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>Join our analytics team to help drive business decisions using data. As a Data Scientist, you will leverage your analytical skills to uncover patterns and insights that will influence our strategic direction. You will work closely with stakeholders to understand their needs and deliver impactful analyses that support our growth objectives. Your role is critical in turning data into actionable insights.</p>
+        <p>Join our officiating team as a FIFA-certified Football Referee. You will be responsible for ensuring fair play and maintaining the integrity of the game across various tournaments and leagues. Your expertise will be crucial in making split-second decisions that can impact the outcome of matches.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Analyze large datasets to uncover trends and patterns that inform business strategies.</li>
-            <li>Develop predictive models to forecast outcomes and improve decision-making.</li>
-            <li>Visualize data findings through reports and dashboards for stakeholders.</li>
-            <li>Collaborate with cross-functional teams to define data-driven goals.</li>
-            <li>Continuously refine data collection and analysis processes to enhance accuracy.</li>
+            <li>Officiate football matches ensuring adherence to FIFA laws of the game</li>
+            <li>Control the match tempo and maintain discipline on the field</li>
+            <li>Make accurate decisions on fouls, offsides, and misconduct</li>
+            <li>Collaborate with assistant referees and VAR officials when applicable</li>
+            <li>Submit detailed match reports and incident reports as required</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proficiency in Python or R for statistical analysis and data manipulation.</li>
-            <li>Experience with data visualization tools (e.g., Tableau, Power BI).</li>
-            <li>Strong knowledge of SQL and database management.</li>
-            <li>Familiarity with machine learning techniques and algorithms.</li>
-            <li>Excellent problem-solving and critical-thinking skills.</li>
+            <li>FIFA referee certification with minimum 3 years experience</li>
+            <li>Excellent knowledge of Laws of the Game and FIFA regulations</li>
+            <li>Outstanding physical fitness and endurance</li>
+            <li>Strong communication and leadership skills</li>
+            <li>Ability to make quick, accurate decisions under pressure</li>
         </ol>`,
         salary: 72000,
         date: 1729681667114,
-        category: "Data Science",
+        category: "Football",
     },
     {
         _id: '3',
-        title: "UI/UX Designer",
+        title: "Basketball Official",
         location: "Bangalore",
         level: "Beginner Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Bangalore Basketball League",
+            "email": "bangalorebasketball@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>Create intuitive digital experiences as a UI/UX Designer. In this role, you will collaborate with product teams to design engaging user interfaces and ensure a seamless user journey. Your creativity and attention to detail will be crucial in developing designs that not only look good but also enhance functionality and user satisfaction.</p>
+        <p>Start your officiating career as a Basketball Official with our premier basketball league. This entry-level position offers excellent training opportunities and the chance to officiate youth, amateur, and professional basketball games while developing your skills under experienced mentors.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Conduct user research and usability testing to gather insights on user needs.</li>
-            <li>Create wireframes, prototypes, and high-fidelity designs that communicate user flows.</li>
-            <li>Collaborate with development teams to implement designs effectively.</li>
-            <li>Stay updated with industry trends and best practices in UI/UX design.</li>
-            <li>Gather and analyze user feedback to iterate and improve designs.</li>
+            <li>Officiate basketball games ensuring fair play and rule compliance</li>
+            <li>Make accurate calls on violations, fouls, and game situations</li>
+            <li>Maintain game flow and manage player interactions professionally</li>
+            <li>Communicate effectively with coaches, players, and scorekeepers</li>
+            <li>Participate in ongoing training and development programs</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proficiency in design tools like Figma, Sketch, or Adobe XD.</li>
-            <li>Strong understanding of user-centered design principles.</li>
-            <li>Basic knowledge of HTML/CSS for better collaboration with developers.</li>
-            <li>Excellent communication and teamwork skills.</li>
-            <li>Creative problem-solving abilities.</li>
+            <li>Basic understanding of basketball rules and regulations</li>
+            <li>Good physical condition and mobility</li>
+            <li>Strong observational and decision-making skills</li>
+            <li>Excellent communication and interpersonal abilities</li>
+            <li>Willingness to learn and improve officiating skills</li>
         </ol>`,
         salary: 61000,
         date: 1729681667114,
-        category: "Designing",
+        category: "Basketball",
     },
     {
         _id: '4',
-        title: "DevOps Engineer",
-        location: "Washington",
+        title: "Volleyball Referee",
+        location: "Chennai",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Chennai Volleyball Association",
+            "email": "chennaivolleyball@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>Enhance our deployment pipeline as a DevOps Engineer. This role will involve automating deployment processes, managing cloud infrastructure, and implementing best practices for security and performance. You will play a vital role in bridging the gap between development and operations, ensuring efficient workflows and high-quality releases.</p>
+        <p>Lead volleyball officiating as a Senior Volleyball Referee for national and international tournaments. Your expertise will be essential in maintaining the highest standards of officiating and mentoring junior officials in the sport.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Automate deployment processes using CI/CD tools to streamline development workflows.</li>
-            <li>Manage cloud infrastructure, ensuring optimal performance and scalability.</li>
-            <li>Implement security best practices to safeguard our systems.</li>
-            <li>Monitor application performance and troubleshoot issues proactively.</li>
-            <li>Collaborate with developers to improve system reliability and efficiency.</li>
+            <li>Officiate volleyball matches ensuring adherence to FIVB regulations</li>
+            <li>Make accurate line calls and violation decisions</li>
+            <li>Manage match protocols and coordinate with line judges</li>
+            <li>Conduct post-match briefings and provide feedback to teams</li>
+            <li>Mentor junior referees and conduct training sessions</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Experience with CI/CD tools (e.g., Jenkins, GitLab CI).</li>
-            <li>Strong knowledge of cloud platforms (e.g., AWS, Azure).</li>
-            <li>Proficiency in scripting languages (e.g., Bash, Python).</li>
-            <li>Familiarity with containerization technologies (e.g., Docker, Kubernetes).</li>
-            <li>Excellent troubleshooting and analytical skills.</li>
+            <li>FIVB International Referee certification</li>
+            <li>Minimum 7 years of volleyball officiating experience</li>
+            <li>Excellent knowledge of FIVB rules and regulations</li>
+            <li>Strong leadership and mentoring capabilities</li>
+            <li>Multilingual abilities preferred for international matches</li>
         </ol>`,
         salary: 53000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Volleyball",
     },
     {
         _id: '5',
-        title: "Software Engineer",
+        title: "Tennis Line Judge",
         location: "Hyderabad",
         level: "Intermediate Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Hyderabad Tennis Club",
+            "email": "hyderabadtennis@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>Join our team as a Software Engineer to build high-quality applications that deliver exceptional user experiences. You will be responsible for designing, developing, and maintaining software solutions that meet business needs. Collaborating closely with other engineers, you will contribute to code reviews and ensure best practices are followed throughout the development process.</p>
+        <p>Join our tennis officiating team as a Line Judge for professional tennis tournaments. You will be responsible for making accurate line calls and ensuring fair play during high-stakes matches, working alongside chair umpires to maintain tournament integrity.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Develop and maintain software applications that fulfill user requirements.</li>
-            <li>Collaborate with cross-functional teams to design scalable and efficient solutions.</li>
-            <li>Participate in code reviews to ensure code quality and maintainability.</li>
-            <li>Conduct testing and debugging to improve application functionality.</li>
-            <li>Document development processes and application designs.</li>
+            <li>Make accurate line calls during tennis matches</li>
+            <li>Coordinate with chair umpires and other line judges</li>
+            <li>Maintain focus and concentration throughout long matches</li>
+            <li>Follow ITF protocols for tournament officiating</li>
+            <li>Provide consistent and professional officiating services</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proficient in Java or C# with a solid understanding of object-oriented programming.</li>
-            <li>Experience with Agile methodologies and software development life cycle.</li>
-            <li>Strong problem-solving skills and attention to detail.</li>
-            <li>Familiarity with version control systems (e.g., Git).</li>
-            <li>Excellent communication and teamwork abilities.</li>
+            <li>ITF Line Judge certification with 2+ years experience</li>
+            <li>Excellent visual acuity and quick reflexes</li>
+            <li>Strong concentration and attention to detail</li>
+            <li>Professional demeanor under pressure</li>
+            <li>Knowledge of tennis rules and tournament procedures</li>
         </ol>`,
         salary: 91000,
         date: 1729681667114,
-        category: "Programming",
+        category: "Tennis",
     },
     {
         _id: '6',
-        title: "Network Engineer",
-        location: "Bangalore",
+        title: "Hockey Referee",
+        location: "Kolkata",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Kolkata Hockey League",
+            "email": "kolkatahockey@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>We are looking for a Network Engineer to manage our infrastructure and ensure robust connectivity across all systems. Your expertise will help us design and implement network solutions that are secure and efficient. You will be pivotal in monitoring network performance and ensuring compliance with security standards.</p>
+        <p>We are looking for an experienced Hockey Referee to officiate professional hockey matches. Your expertise will help ensure fair play and maintain the integrity of the game across various tournaments and leagues.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Design and implement network solutions that meet organizational needs.</li>
-            <li>Monitor network performance and troubleshoot issues to ensure uptime.</li>
-            <li>Ensure security compliance by implementing best practices.</li>
-            <li>Document network configurations and maintain updated records.</li>
-            <li>Collaborate with IT teams to enhance network capabilities.</li>
+            <li>Officiate hockey matches ensuring adherence to FIH rules</li>
+            <li>Make accurate decisions on fouls, penalties, and game situations</li>
+            <li>Control match tempo and maintain player discipline</li>
+            <li>Coordinate with assistant referees and technical officials</li>
+            <li>Submit detailed match reports post-game</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proficiency in network protocols and routing (e.g., TCP/IP, BGP, OSPF).</li>
-            <li>Experience with firewalls, VPNs, and security technologies.</li>
-            <li>Strong troubleshooting skills and attention to detail.</li>
-            <li>Excellent communication and teamwork abilities.</li>
-            <li>Relevant certifications (e.g., CCNA, CCNP) are a plus.</li>
+            <li>FIH Level 2 referee certification minimum</li>
+            <li>Excellent knowledge of hockey rules and regulations</li>
+            <li>Outstanding physical fitness and endurance</li>
+            <li>Strong decision-making abilities under pressure</li>
+            <li>Excellent communication and conflict resolution skills</li>
         </ol>`,
         salary: 77000,
         date: 1729681667114,
-        category: "Networking",
+        category: "Hockey",
     },
     {
         _id: '7',
-        title: "Project Manager",
-        location: "Bangalore",
+        title: "Baseball Umpire",
+        location: "Pune",
         level: "Senior Level",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
-            "name": "Slack",
-            "email": "slack@demo.com",
+            "name": "Pune Baseball Association",
+            "email": "punebaseball@sports.com",
             "image": company_icon,
         },
         description: `
-        <p>Lead projects as a Project Manager ensuring timely delivery and alignment with organizational goals. You will oversee project planning, execution, and monitoring, collaborating with various teams to ensure that all aspects of each project are delivered successfully. Your strong leadership skills will be key to motivating team members and fostering a positive work environment.</p>
+        <p>Lead baseball officiating as a certified Baseball Umpire for professional and amateur leagues. Your expertise will ensure fair play and accurate rule enforcement across all levels of competition.</p>
         <h2><strong>Key Responsibilities</strong></h2>
         <ol>
-            <li>Define project scope, objectives, and deliverables in collaboration with stakeholders.</li>
-            <li>Develop detailed project plans and schedules to guide execution.</li>
-            <li>Monitor project progress and adjust plans as necessary to meet deadlines.</li>
-            <li>Facilitate communication between teams and manage stakeholder expectations.</li>
-            <li>Conduct project retrospectives to identify lessons learned and areas for improvement.</li>
+            <li>Officiate baseball games ensuring adherence to official baseball rules</li>
+            <li>Make accurate calls on balls, strikes, safe/out decisions</li>
+            <li>Position correctly for optimal viewing of plays</li>
+            <li>Maintain game control and manage player/coach interactions</li>
+            <li>Complete detailed game reports and incident documentation</li>
         </ol>
         <h2><strong>Skills Required</strong></h2>
         <ol>
-            <li>Proven experience as a Project Manager in a technology-focused environment.</li>
-            <li>Familiarity with project management software (e.g., JIRA, Trello).</li>
-            <li>Strong leadership and organizational skills.</li>
-            <li>Excellent communication and interpersonal abilities.</li>
-            <li>Certification in project management (e.g., PMP, Scrum Master) is preferred.</li>
+            <li>Certified baseball umpire with extensive experience</li>
+            <li>Excellent knowledge of official baseball rules and mechanics</li>
+            <li>Strong physical conditioning and mobility</li>
+            <li>Outstanding decision-making skills under pressure</li>
+            <li>Professional communication and leadership abilities</li>
         </ol>`,
         salary: 60000,
         date: 1729681667114,
-        category: "Management",
+        category: "Baseball",
     },
     {
         _id: '8',
